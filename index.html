@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTub Home Page</title>
+    <!-- this is font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Display:ital@1&family=Poppins:ital,wght@0,500;1,400&family=Roboto:wght@300&family=Work+Sans:ital@0;1&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media_query.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="left">
+                <button class="checkbtn">
+                    <i class='fa fa-bars'></i>
+                </button>
+                <div class="you_tube">
+
+                </div>
+            </div>
+            <div class="center">
+                <form action="">
+                    <input type="text" placeholder="enter somethings">
+                </form>
+                <button class="btn">
+                    <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+                </button>
+            </div>
+            <div class="right">
+                <button class="dark-button" id="dark-mode-toggle">
+                    <i id="dark_icon" class="fa fa-adjust" aria-hidden="true"></i>
+                </button>
+
+                <ion-icon name="videocam-outline" class="right-icon1"></ion-icon>
+                <ion-icon name="notifications-outline" class="right-icon2"></ion-icon>
+                <ion-icon name="search-outline" class="right-icon"></ion-icon>
+                <ion-icon name="person-outline" class="right-icon4"></ion-icon>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <aside class="asideBar">
+            <div class="subscribeaside">
+                <ul>
+                    <li>
+                        <div id="asideLogos" title="Home">
+                            <span class="spanBox">
+                                <!-- <img src="./ashideLogo/house-solid.svg" alt=""> -->
+
+                                <i class="fa fa-home" aria-hidden="true"></i>
+                            </span>
+                            <p>Home</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="asideLogos" title="Shorts">
+                            <!-- <img src="./ashideLogo/circle-play-regular.svg" alt=""> -->
+                            <span>
+                                <i class="fa fa-play-circle" aria-hidden="true"></i>
+                            </span>
+                            <p>Shorts</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div title="Subscriptions" id="asideLogos">
+                            <!-- <img src="./ashideLogo/photo-film-solid.svg" alt=""> -->
+                            <span>
+                                <i class='fas fa-music'></i>
+                            </span>
+                            <p>Subscriptions</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="hr">
+                <hr>
+            </div>
+            <div class="subscribeaside">
+                <ul>
+                    <li>
+                        <div id="asideLogos" title="Library">
+                            <!-- <img src="./ashideLogo/play-solid.svg" alt=""> -->
+                            <span>
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </span>
+                            <p>Library</p>
+                        </div>
+                        <div id="asideLogos" title="History">
+                            <!-- <img src="./ashideLogo/clock-rotate-left-solid.svg" alt=""> -->
+                            <span>
+                                <i class="fa fa-history" aria-hidden="true"></i>
+                            </span>
+                            <p>History</p>
+                        </div>
+                        <div id="asideLogos" title="Watch later">
+                            <!-- <img src="./ashideLogo/clock-regular.svg" alt=""> -->
+                            <span>
+                                <i class='fa-solid fa-clock'></i>
+                            </span>
+                            <p>Watch later</p>
+                        </div>
+                        <div id="asideLogos" title="Liked videos">
+                            <!-- <img src="./ashideLogo/thumbs-up-regular.svg" alt=""> -->
+                            <span>
+                                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                            </span>
+                            <p>Liked videos</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="hr">
+                <hr>
+            </div>
+            <div class="subscribeaside">
+                <h2>Subscriptions</h2>
+                <ul>
+                    <li>
+                        <div id="asideLogos" title="YahoBaba">
+                            <!-- <img src="./subscriptionLogo/cat-solid.svg" alt=""> -->
+                            <span>
+                                <i class='fa-solid fa-cat'></i>
+                            </span>
+                            <p>YahoBaba</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="asideLogos" title="Thapa Technical">
+                            <!-- <img src="./subscriptionLogo/cloud-solid.svg" alt=""> -->
+
+                            <span>
+                                <i class='fas fa-cloud'></i>
+                            </span>
+                            <p>Thapa Technical</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="asideLogos" title="Geeky Shows">
+                            <!-- <img src="./subscriptionLogo/dumbbell-solid.svg" alt=""> -->
+                            <span>
+                                <i class='fas fa-satellite-dish'></i>
+                            </span>
+                            <p>Geeky Shows</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="asideLogos" title="Tech Gun">
+                            <!-- <img src="./subscriptionLogo/landmark-solid.svg" alt=""> -->
+                            <span>
+                                <i class='fas fa-trash-alt'></i>
+                            </span>
+                            <p>Tech Gun</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="asideLogos" title="Codetup">
+                            <!-- <img src="./subscriptionLogo/music-solid.svg" alt=""> -->
+                            <span>
+                                <i class='fas fa-music'></i>
+                            </span>
+                            <p>Codetup</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="asideLogos" title="Aniket Tiwari">
+                            <!-- <img src="./subscriptionLogo/person-biking-solid.svg" alt=""> -->
+                            <span>
+                                <i class='fas fa-car-side'></i>
+                            </span>
+                            <p>Aniket tiwari</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="asideLogos" title="Taja khabar">
+                            <!-- <img src="./subscriptionLogo/skull-crossbones-solid.svg" alt="">-->
+                            <span>
+                                <i class='fas fa-address-book'></i>
+                            </span>
+                            <p>Taja khabar</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="hr">
+                <hr>
+            </div>
+            <div class="subscribeaside">
+                <h2>Explore</h2>
+                <ul>
+                    <li>
+                        <div id="asideLogos" title="Tranding">
+                            <!-- <img src="./exploreLogo/life-ring-solid.svg" alt=""> -->
+                            <span>
+                                <i class='fa fa-rocket'></i>
+                            </span>
+                            <p>Tranding</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="asideLogos" title="Music">
+                            <!-- <img src="./subscriptionLogo/music-solid.svg" alt=""> -->
+                            <span>
+                                <i class='fas fa-music'></i>
+                            </span>
+                            <p>Music</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="asideLogos" title="Movies">
+                            <!-- <img src="./exploreLogo/film-solid.svg" alt=""> -->
+                            <span>
+                                <i class='fa fa-play-circle'></i>
+                            </span>
+                            <p>Movies</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="asideLogos" title="Live">
+                            <!-- <img src="./exploreLogo/rss-solid.svg" alt=""> -->
+                            <span>
+                                <i class='fa fa-rss'></i>
+                            </span>
+                            <p>Live</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="asideLogos" title="Fashtion">
+                            <!-- <img src="./exploreLogo/shirt-solid.svg" alt=""> -->
+                            <span>
+                                <i class='fa fa-user-secret'></i>
+                            </span>
+                            <p>Fashtion</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="asideLogos" title="Game">
+                            <!-- <img src="./exploreLogo/volleyball-solid.svg" alt=""> -->
+                            <span>
+                                <i class='fas fa-baseball-ball'></i>
+                            </span>
+                            <p>Game</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="hr">
+                <hr>
+            </div>
+            <div class="subscribeaside">
+                <h2>More from YouTub</h2>
+                <ul>
+                    <li>
+                        <div id="asideLogos" title="YouTub Premium">
+                            <!-- <img src="./ashideLogoYoutub/youtube_logo-3.webp" alt=""> -->
+                            <span>
+                                <i class='fa-solid fa-square-caret-left'></i>
+                            </span>
+                            <p>YouTub Premium</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="asideLogos" title="Creator Studio">
+                            <img src="./ashideLogoYoutub/youtube-logo-2.png" alt="">
+                            <p>Creator Studio</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="asideLogos" title="YouTub Music">
+                            <img src="./ashideLogoYoutub/youtube_logo-3.webp" alt="">
+                            <p>YouTub Music</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="asideLogos" title="YouTube Kids">
+                            <img src="./ashideLogoYoutub/youtub-logo-4.png" alt="">
+                            <p>YouTube Kids</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="asideLogos" title="YouTub TV">
+                            <img src="./ashideLogoYoutub/youtub-logo-5.png" alt="">
+                            <p>YouTub TV</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="asideLogos" title="Game">
+                            <!-- <img src="./exploreLogo/volleyball-solid.svg" alt=""> -->
+                            <span>
+                                <i class='fas fa-baseball-ball'></i>
+                            </span>
+                            <p>Game</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="hr">
+                <hr>
+            </div>
+            <div class="subscribeaside">
+                <ul>
+                    <li>
+                        <div id="asideLogos" title="Setting">
+                            <!-- <img src="./seting-logo/gear-solid.svg" alt=""> -->
+                            <span>
+                                <i class="fa fa-cog" aria-hidden="true"></i>
+                            </span>
+                            <p>Setting</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="asideLogos" title="Report History">
+                            <!-- <img src="./seting-logo/flag-regular.svg" alt=""> -->
+                            <span>
+                                <i class='fas fa-anchor'></i>
+                            </span>
+                            <p>Report history</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="asideLogos" title="Help">
+                            <img src="./seting-logo/circle-info-solid.svg" alt="">
+                            <p>Help</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="asideLogos" title="YouTub Kids">
+                            <img src="./seting-logo/comment-solid.svg" alt="">
+                            <p>YouTube Kids</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="mainContent">
+            <div class="botton">
+                <button id="all">All</button>
+                <button>Music</button>
+                <button>Movies</button>
+                <button>Web Development</button>
+                <button>Computer programming</button>
+                <button>T-Series</button>
+                <button>Mixes</button>
+                <button>Kapil Sharma</button>
+                <button>Bodybuilding</button>
+                <button>Live</button>
+                <button>Gmaing</button>
+                <button>Bollywood Music</button>
+                <button>Laptops</button>
+                <button>Bhajan Music</button>
+                <button>Bhajan Music</button>
+                <button>Bhajan Music</button>
+                <button>Bhajan Music</button>
+                <button>Bhajan Music</button>
+                <button>Bhajan Music</button>
+                <button>Bhajan Music</button>
+                <button>Bhajan Music</button>
+                <button>Bhajan Music</button>
+            </div>
+            <div class="Content">
+                <div class="bgcborder">
+                    <div class="bgc">
+                        <img src="./background/bg-1.jpg" alt="">
+                    </div>
+                    <div class="smalllogo">
+                        <div class="image">
+                            <img src="./smallLogo/girl-mascot-4718135.png" alt="">
+                        </div>
+                        <div class="textcontent">
+                            <h4>Jaan Hai Meri (Full Video) Radhe Shyam | Prabhas, Pooja Hegde | Armaan M, Amaal M,
+                                Rashmi Virag</h4>
+                            <p>Romantic songs . 498K view .1 day ago</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="bgcborder">
+                    <div class="bgc">
+                        <img src="./background/bg-2.jpg" alt="">
+                    </div>
+                    <div class="smalllogo">
+                        <div class="image">
+                            <img src="./smallLogo/apple-3283668.png" alt="">
+                        </div>
+                        <div class="textcontent">
+                            <h4>10 Lines on Gorilla 🦍 in English !! Information on Gorilla !! Ashwin's World</h4>
+                            <p>about Gorilla . 498K view .1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bgcborder">
+                    <div class="bgc">
+                        <img src="./background/bg-3.jpg" alt="">
+                    </div>
+                    <div class="smalllogo">
+                        <div class="image">
+                            <img src="./smallLogo/bubbles-1985148.png" alt="">
+                        </div>
+                        <div class="textcontent">
+                            <h4>Jaan Hai Meri (Full Video) Radhe Shyam | Prabhas, Pooja Hegde | Armaan M, Amaal M,
+                                Rashmi Virag</h4>
+                            <p>Romantic songs . 498K view .1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bgcborder">
+                    <div class="bgc">
+                        <img src="./background/bg-4.jpg" alt="">
+                    </div>
+                    <div class="smalllogo">
+                        <div class="image">
+                            <img src="./smallLogo/bubbles-1985148.png" alt="">
+                        </div>
+                        <div class="textcontent">
+                            <h4>100 FACTS About DOGS That Will Surprise You 🐶🐾 Discover them!</h4>
+                            <p>about dogs . 498K view . 1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bgcborder">
+                    <div class="bgc">
+                        <img src="./background/bg-5.jpg" alt="">
+                    </div>
+                    <div class="smalllogo">
+                        <div class="image">
+                            <img src="./smallLogo/bubbles-1985148.png" alt="">
+                        </div>
+                        <div class="textcontent">
+                            <h4>The Mountain Ranges | Mountains-Fact & Information | Major Mountain Ranges in the World
+                                | Wildlife.</h4>
+                            <p>About mountain . 498K view . 1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bgcborder">
+                    <div class="bgc">
+                        <img src="./background/bg-13.jpg" alt="">
+                    </div>
+                    <div class="smalllogo">
+                        <div class="image">
+                            <img src="./smallLogo/girl-mascot-4718135.png" alt="">
+                        </div>
+                        <div class="textcontent">
+                            <h4>Sad Song 2023 | Hindi Sad Songs |Heart Touching Sad Songs |Breakup Songs |Sad Mashup
+                                |Bollywood song</h4>
+                            <p>Romantic songs . 498K view . 1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bgcborder">
+                    <div class="bgc">
+                        <img src="./background/bg-10.jpg" alt="">
+                    </div>
+                    <div class="smalllogo">
+                        <div class="image">
+                            <img src="./smallLogo/wikimedia-community-logo-lgbt-1192365.png" alt="">
+                        </div>
+                        <div class="textcontent">
+                            <h4>Jaan Hai Meri (Full Video) Radhe Shyam | Prabhas, Pooja Hegde | Armaan M, Amaal M,
+                                Rashmi Virag</h4>
+                            <p>Romantic songs . 498K view . 1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bgcborder">
+                    <div class="bgc">
+                        <img src="./background/bg-11.jpg" alt="">
+                    </div>
+                    <div class="smalllogo">
+                        <div class="image">
+                            <img src="./smallLogo/apple-3283668.png" alt="">
+                        </div>
+                        <div class="textcontent">
+                            <h4>Jaan Hai Meri (Full Video) Radhe Shyam | Prabhas, Pooja Hegde | Armaan M, Amaal M,
+                                Rashmi Virag</h4>
+                            <p>Romantic songs . 498K view . 1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bgcborder">
+                    <div class="bgc">
+                        <img src="./background/bg-9.jpg" alt="">
+                    </div>
+                    <div class="smalllogo">
+                        <div class="image">
+                            <img src="./smallLogo/wikimedia-community-logo-lgbt-1192365.png" alt="">
+                        </div>
+                        <div class="textcontent">
+                            <h4>Jaan Hai Meri (Full Video) Radhe Shyam | Prabhas, Pooja Hegde | Armaan M, Amaal M,
+                                Rashmi Virag</h4>
+                            <p>Romantic songs . 498K view . 1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bgcborder">
+                    <div class="bgc">
+                        <img src="./background/bg-10.jpg" alt="">
+                    </div>
+                    <div class="smalllogo">
+                        <div class="image">
+                            <img src="./smallLogo/apple-3283668.png" alt="">
+                        </div>
+                        <div class="textcontent">
+                            <h4>Smart City Information System | PHP and MySQL Project Source Code | PHP MySQL CRUD
+                                Project.</h4>
+                            <p>Smart City . 498K view . 1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bgcborder">
+                    <div class="bgc">
+                        <img src="./background/bg-11.jpg" alt="">
+                    </div>
+                    <div class="smalllogo">
+                        <div class="image">
+                            <img src="./smallLogo/bubbles-1985148.png" alt="">
+                        </div>
+                        <div class="textcontent">
+                            <h4>Smart City Information System | PHP and MySQL Project Source Code | PHP MySQL CRUD
+                                Project.</h4>
+                            <p>Romantic songs . 498K view . 1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bgcborder">
+                    <div class="bgc">
+                        <img src="./background/bg-12.jpg" alt="">
+                    </div>
+                    <div class="smalllogo">
+                        <div class="image">
+                            <img src="./smallLogo/bubbles-1985148.png" alt="">
+                        </div>
+                        <div class="textcontent">
+                            <h4>Sad Song 2023 | Hindi Sad Songs |Heart Touching Sad Songs |Breakup Songs |Sad Mashup
+                                |Bollywood song</h4>
+                            <p>New sad songs . 498K view . 1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bgcborder">
+                    <div class="bgc">
+                        <img src="./background/bg-13.jpg" alt="">
+                    </div>
+                    <div class="smalllogo">
+                        <div class="image">
+                            <img src="./smallLogo/bubbles-1985148.png" alt="">
+                        </div>
+                        <div class="textcontent">
+                            <h4>Smart City Information System | PHP and MySQL Project Source Code | PHP MySQL CRUD
+                                Project.</h4>
+                            <p>Smart City info . 498K view . 1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bgcborder">
+                    <div class="bgc">
+                        <img src="./background/bg-1.jpg" alt="">
+                    </div>
+                    <div class="smalllogo">
+                        <div class="image">
+                            <img src="./smallLogo/bubbles-1985148.png" alt="">
+                        </div>
+                        <div class="textcontent">
+                            <h4>Sad Song 2023 | Hindi Sad Songs |Heart Touching Sad Songs |Breakup Songs |Sad Mashup
+                                |Bollywood song</h4>
+                            <p>Romantic songs . 498K view . 1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bgcborder">
+                    <div class="bgc">
+                        <img src="./background/bg-2.jpg" alt="">
+                    </div>
+                    <div class="smalllogo">
+                        <div class="image">
+                            <img src="./smallLogo/bubbles-1985148.png" alt="">
+                        </div>
+                        <div class="textcontent">
+                            <h4>i10 Lines on Gorilla 🦍 in English !! Information on Gorilla !! Ashwin's World</h4>
+                            <p>Gorilla info . 498K view . 1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bgcborder">
+                    <div class="bgc">
+                        <img src="./background/bg-3.jpg" alt="">
+                    </div>
+                    <div class="smalllogo">
+                        <div class="image">
+                            <img src="./smallLogo/bubbles-1985148.png" alt="">
+                        </div>
+                        <div class="textcontent">
+                            <h4>Sad Song 2023 | Hindi Sad Songs |Heart Touching Sad Songs |Breakup Songs |Sad Mashup
+                                |Bollywood song</h4>
+                            <p>Romantic songs . 498K view . 1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="bgcborder">
+                    <div class="bgc">
+                        <img src="./background/bg-4.jpg" alt="">
+                    </div>
+                    <div class="smalllogo">
+                        <div class="image">
+                            <img src="./smallLogo/bubbles-1985148.png" alt="">
+                        </div>
+                        <div class="textcontent">
+                            <h4>100 FACTS About DOGS That Will Surprise You 🐶🐾 Discover them!</h4>
+                            <p>Romantic songs . 498K view . 1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bgcborder">
+                    <div class="bgc">
+                        <img src="./background/bg-5.jpg" alt="">
+                    </div>
+                    <div class="smalllogo">
+                        <div class="image">
+                            <img src="./smallLogo/bubbles-1985148.png" alt="">
+                        </div>
+                        <div class="textcontent">
+                            <h4>The Mountain Ranges | Mountains-Fact & Information | Major Mountain Ranges in the World
+                                | Wildlife.</h4>
+                            <p>Romantic songs . 498K view . 1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bgcborder">
+                    <div class="bgc">
+                        <img src="./background/bg-6.jpg" alt="">
+                    </div>
+                    <div class="smalllogo">
+                        <div class="image">
+                            <img src="./smallLogo/bubbles-1985148.png" alt="">
+                        </div>
+                        <div class="textcontent">
+                            <h4>Nakli Uday और Majnu ने माँगे Goa में अय्याशी करने के लिए पैसे | The Kapil Sharma Show |
+                                Best Moments.</h4>
+                            <p>Romantic songs . 498K view . 1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bgcborder">
+                    <div class="bgc">
+                        <img src="./background/bg-7.jpg" alt="">
+                    </div>
+                    <div class="smalllogo">
+                        <div class="image">
+                            <img src="./smallLogo/bubbles-1985148.png" alt="">
+                        </div>
+                        <div class="textcontent">
+                            <h4>Sad Song 2023 | Hindi Sad Songs |Heart Touching Sad Songs |Breakup Songs |Sad Mashup
+                                |Bollywood song</h4>
+                            <p>Romantic songs . 498K view . 1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+    <script>
+        // this selector for asidebar 
+        const button = document.querySelector(".checkbtn")
+        const asidevar = document.querySelector(".asideBar")
+
+        const mainContent = document.querySelector(".mainContent")
+
+        const content = document.querySelector(".Content");
+
+        const bgborder = document.querySelectorAll(".Content .bgcborder ")
+
+        button.addEventListener("click", () => {
+            asidevar.classList.toggle("hide");
+            mainContent.classList.toggle("mainhide");
+            content.classList.toggle(".mainContentContent")
+
+
+        })
+
+        // this selector for dark button 
+
+        // const darkButton = document.querySelector(".dark-button")
+        // const element = document.body
+        // const header = document.querySelector("body .header")
+        // const navbar = document.querySelector("body .header .navbar")
+
+        // const mainbotton = document.querySelector(".botton")
+        // const darkIcon = document.querySelector(".right button ion-icon")
+
+        // const d = document.querySelector(".right button")
+
+        // const asidevarI = document.querySelectorAll(".asideBar .subscribeaside #asideLogos")
+
+        // const logos = document.querySelectorAll(".asideBar #asideLogos a")
+
+        // const l = document.querySelectorAll(".asideBar #asideLogos img")
+
+        // const menul = document.querySelector(".left i")
+
+        // const youtubl = document.querySelector(".left img")
+
+
+        // const text = document.querySelectorAll(".textcontent h4")
+        // const text2 = document.querySelectorAll(".textcontent p")
+
+        // const imgg = document.querySelector(".left ")
+
+
+        // const you_tube = document.querySelector(".you_tube")
+        // console.log(you_tube)
+
+
+
+
+
+        // // this selector for dark button 
+        // darkButton.addEventListener("click", () => {
+
+        //     element.classList.toggle("dark-button");
+        //     header.classList.toggle("darkHeader")
+        //     navbar.classList.toggle("darknav")
+        //     mainbotton.classList.toggle("darkBotton")
+        //     darkIcon.classList.toggle("themeIcon")
+        //     menul.classList.toggle("menu")
+        //     d.classList.toggle("themeIcon")
+        //     you_tube.classList.toggle("you_tube_1")
+
+
+        //     for (let i = 0; i < asidevarI.length; i++) {
+        //         asidevarI[i].classList.toggle("asideColor")
+        //     }
+        //     for (let j = 0; j < logos.length; j++) {
+        //         logos[j].classList.toggle("asideLogosDark")
+        //     }
+        //     for (let k = 0; k < l.length; k++) {
+        //         l[k].classList.toggle("a")
+        //     }
+        //     for (let z = 0; z < text.length; z++) {
+        //         text[z].classList.toggle("textwithe")
+        //     }
+        //     for (let y = 0; y < text2.length; y++) {
+        //         text2[y].classList.toggle("textwithe")
+        //     }
+
+        // })
+
+
+
+
+
+
+        const darkModeToggle = document.querySelector('#dark-mode-toggle');
+        const body = document.body;
+        const img = document.querySelectorAll("#asideLogos img")
+        
+        const header = document.querySelector("body .header")
+        const nav_button = document.querySelector(".botton")
+
+        const youtub = document.querySelector(".you_tube");
+        console.log(img)
+        
+
+        const isDarkMode = localStorage.getItem('isDarkMode');
+
+        if (isDarkMode === 'true') {
+            body.classList.add('dark-mode');
+            header.classList.add('dark-mode')
+            nav_button.classList.add('dark-mode')
+
+            youtub.classList.toggle("you_tube_1")
+
+            // for(var i=0; i<img.length;i++){
+            //     img.classList.toggle("asideLogosDark");
+            // }
+
+            // l.classList.add('dark-mode')
+        }
+
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+
+            header.classList.toggle('dark-mode')
+
+            nav_button.classList.toggle("dark-mode")
+
+            youtub.classList.toggle("you_tube_1")
+
+            // for(var i=0; i<img.length;i++){
+            //     img.classList.toggle("asideLogosDark");
+            // }
+
+            // l.classList.add('dark-mode')
+
+
+
+
+
+            localStorage.setItem('isDarkMode', body.classList.contains('dark-mode'));
+        });
+
+
+    </script>
+</body>
+
+</html>

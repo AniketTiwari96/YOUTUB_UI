@@ -1,0 +1,654 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: white;
+    color: black;
+}
+
+.right button{
+    border: none;
+    background-color: transparent;
+    /* color:black; */
+    /* margin-bottom: 20px; */
+    /* margin-top: 8px; */
+    /* border: 2px solid red; */
+    border-radius: 50%;
+    padding-top: -10px;
+
+
+
+
+    /* width: 30px; */
+}
+/* .themeIcon{
+    padding: 0px;
+    background-color: black;
+    color: white;
+} */
+
+html{
+    font-size: 65.2%;
+}
+
+
+
+
+.dark-mode {
+    background-color: black !important;
+
+    color:white;
+}
+  
+
+.checkbtn i{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header{
+    background-color: white;
+    /* background-color: black; */
+    /* background-color:transparent; */
+    padding:  0 2rem;
+    position: fixed;
+    top: 0px;
+    align-items: center;
+    z-index: 1;
+    width: 100%;
+}
+.darkHeader{
+    /* background-color: black; */
+    /* background-color: white; */
+    
+    color: black;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+}
+.left i{
+    margin-top: -6px;
+    cursor: pointer;
+    /* color: red; */
+}
+.menu{
+    color: rgb(102, 90, 116);
+    /* border: 2px solid red; */
+}
+.left button{
+    border: none;
+    margin-top: -9px;
+    margin-left: -14px;
+}
+.left img{
+    width: 9rem;
+    margin-left: 10px;
+    margin-top: -8px;
+    mix-blend-mode: multiply;
+    cursor: pointer;
+    border: 2px solid red;
+   
+}
+
+.you_tub{
+    display: none;
+    border: 2px solid red;
+    /* color: red;
+    filter: sepia(100%);
+    -webkit-filter: sepia(100%);
+    background-color: #fff;
+    z-index: 5; 
+    filter: invert(100%);
+    -webkit-filter: invert(100%); */ 
+}
+.newyoutubimage{
+    background-image: url("https://www.logo.wine/a/logo/YouTube/YouTube-White-Dark-Background-Logo.wine.svg");
+}
+
+.center{
+    max-width: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.center input{
+    width: 30vw;
+    padding: 1rem;
+    outline: none;
+    border: 0.5px solid rgb(230, 225, 225);
+    border-radius: 2rem 0 0 2rem;
+}
+
+.btn{
+    padding: 1rem;
+    border: 0.5px solid rgb(230, 225, 225);
+
+    border-radius: 0 2rem 2rem 0;
+    position: relative;
+    top: 0;
+    right: 0;
+    /* border: none; */
+    cursor: pointer;
+}
+
+.right{
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+}
+
+.right-icon[name = search-outline]{
+    display: none;
+}
+
+#dark_icon{
+    font-size: 1.7rem;
+    cursor: pointer;
+    border-radius: 50%;
+    /* color: teal; */
+    /* border: 2px solid red; */
+    /* margin-bottom: -4px;
+    margin-right: 5px; */
+    background-color: #fff;
+    border: 2px solid white;
+}
+
+.right-icon1{
+    font-size: 2.5rem;
+    padding: 5px;
+    padding-left: 15px;
+    margin-top: 2px;
+    cursor: pointer;
+    margin-bottom: -4px;
+    /* margin-left: 5px; */
+}
+
+.right-icon1:hover{
+    /* background-color: rgb(208, 203, 203); */
+    /* border-radius: 20px; */
+    cursor: pointer;
+}
+.right-icon2{
+    font-size: 2.5rem;
+    padding: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 1px;
+    cursor: pointer;
+}
+.right-icon2:hover{
+    background-color: rgb(208, 203, 203);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.right-icon4{
+    font-size: 2rem;
+    margin-top: 4px;
+    margin-right: 7px;
+    /* background-color: rgb(208, 203, 203); */
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+/* media query start here  */
+@media screen and (max-width : 600px) {
+    .left{
+        width: 10rem;
+    }
+    .header{
+        min-height: 6.7rem !important;
+        /* border: 2px solid red; */
+    }
+
+    .left i{
+        font-size: 1.5rem;
+    }
+
+    .center{
+        width: 40%;
+    }
+    .center input {
+        padding: 6px;
+    }
+    .btn{
+        padding: 6px;
+        right: 0;
+    }
+    .btn{
+        padding: 1.3rem;
+        border: 0.5px solid rgb(230, 225, 225);
+    
+        border-radius: 0 2rem 2rem 0;
+        position: relative;
+        top: 0;
+        right: 0;
+        /* border: none; */
+        cursor: pointer;
+    }
+    .btn i{
+        font-size: 1.2rem;
+    }
+    .right-icon4{
+        /* background-color: rgb(208, 203, 203); */
+        padding: 5px;
+
+    }
+
+    .right-icon{
+        font-size: 2.4rem;
+        padding: 8px;
+        margin-top: 2px;
+        margin-right: 12px;
+        /* border: 2px solid red; */
+    }
+    
+    .right{
+        /* border: 2px solid red; */
+        margin-top: -9px;
+    }
+    .fa-solid{
+        display: none;
+    }
+    .checkbtn{
+        display: none;
+    }
+   
+
+    
+    .left img{
+        margin: 0px;
+    }
+    .header{
+        padding: 0px;
+    }
+    .navbar{
+        margin: 0px;
+        /* border: 2px solid green; */
+        align-items: center;
+        min-height: 6.7rem !important;
+       
+    }
+    .mianrightIcon{
+        /* border: 2px solid red; */
+        font-size: 1.8rem;
+        /* padding: 5px; */
+        padding-top: 11px;
+        padding-bottom: 21px;
+        padding-right: 22px;
+        padding-left: -10;
+        /* margin-top: -9px; */
+        cursor: pointer;
+        /* margin-bottom: -8px; */
+        /* margin-left: 5px; */
+    }
+    #dark_icon{
+        font-size: 1.5rem;
+        
+    }
+}
+
+@media screen and (max-width:480px) {
+    .right{
+        width: 18rem;
+    }
+    .right-icon[name = search-outline]{
+    display: block;
+    }
+
+    .center{
+    display: none;
+    }
+    .right-icon{
+    padding: 5px;
+    }
+    .header{
+    padding-right: 3px;
+    } 
+}
+
+
+.you_tube{
+    /* border: 2px solid red; */
+    height: 40px;
+    width: 110px;
+    position: relative;
+    top: -5px;
+    right: -10px;
+    background-image: url('../YouTube-Logo.wine.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.you_tube_1{
+    height: 40px;
+    width: 110px;
+    position: relative;
+    top: -5px;
+    right: -10px;
+    background-image: url('../YouTube-White-Logo.wine.svg')!important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+
+
+
+
+
+/* this is main tags */
+main {
+    display: flex;
+}
+
+/* ashide bar */
+.asideBar {
+    /* border: 3px solid rgb(5, 32, 188); */
+    width: 280px;
+    min-width: 280px;
+    box-sizing: border-box;
+    clear: both;
+    margin-top: 75px;
+    height: 100vh;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    transition: all .1s;
+
+}
+.asideColor{
+    /* color: black; */
+    z-index: -3;
+    /* background-color: white; */
+    border-radius: 30px;
+}
+.hide {
+    left: -285px;
+    /* color: red; */
+}
+.asideBar:hover{
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.asideBar ul {
+    list-style: none;
+}
+
+.asideBar #asideLogos img {
+    width: 8%;
+    margin: 10px 20px 0px 10px;
+    padding-left: 5px;
+    /* color: black;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);  */
+
+}
+.asideBar #asideLogos i {
+    width: 8%;
+    font-size: 15px;
+    margin: 10px 20px 0px 10px;
+    padding-left: 5px;
+    /* color: black;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);  */
+
+}
+
+.asideBar #asideLogos ion-icon {
+    width: 7%;
+    font-size: px;
+    margin: 10px 20px 0px 10px;
+    padding-left: 5px;
+    /* color: black;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);  */
+
+}
+
+
+
+
+.asideBar #asideLogos img:hover{
+    color: black;
+}
+.spanBox{
+    /* border: 2px solid red; */
+}
+#asideLogos {
+    /* border: 2px solid red; */
+    margin-left: 0px;
+    margin-top: 1px;
+    width: 260px;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+
+}
+
+
+#asideLogos:hover {
+    background-color: rgb(229, 224, 224);
+    border-radius: 20px;
+    padding-bottom: 10px;
+}
+
+.asideBar #asideLogos p {
+    font-size: 200%;
+    margin-left: 15px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+.asideBar #asideLogos p:hover {
+    color: black;
+}
+.asideLogosDark{
+    /* filter: invert(100%);
+    -webkit-filter: invert(100%);  */
+    color: white !;
+}
+.subscribeaside h2{
+    font-size: 200%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.hr hr {
+    margin: 20px 40px 20px 20px;
+    background-color: rgb(239, 244, 245);
+}
+
+
+.mainContent {
+    /* border: 3px solid rgb(21, 201, 15); */
+    position: absolute;
+    left: 320px;
+    top: 150px;
+    z-index: -1;
+}
+
+.mainhide{
+    left: 0px;
+    padding-left: 50px;
+}
+
+.mainContent .botton {
+    /* border: 2px solid red; */
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    margin-top: -80px;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+    overflow: auto;
+    display: flex;
+    white-space: nowrap;
+    width: 100%;
+}
+/* .botton{
+    background-color: white;
+    color: black;
+} */
+.darkBotton{
+    background-color: black;
+    color: white;
+}
+.mainContent .botton #all {
+    background-color: black;
+    color: white;
+}
+
+.mainContent .botton::-webkit-scrollbar {
+    width: 0%;
+}
+
+.mainContent .botton #bottonNext {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: inline-block;
+    border-radius: 50px;
+    padding-left: 5px;
+    margin: 0px 5px 0px;
+}
+
+.mainContent .botton button {
+    /* background-color: whitesmoke; */
+    border: 2px solid white;
+    font-size: 163%;
+    margin: 0px 10px 0px 0px;
+    border-radius: 20px;
+    padding: 8px 10px 8px 10px;
+    display: block;
+}
+
+.mainContent .botton button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+.Content {
+    max-width: 110vw;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    border-radius: 20px;
+    column-gap: 15px;
+    margin-top: -10px;
+}
+
+.Content .bgc img {
+    /* border: 2px solid green; */
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.Content .bgc {
+    /* border: 2px solid red; */
+    width: 100%;
+    border-radius: 20px;
+    margin: 0px;
+}
+
+.Content .bgcborder {
+    box-sizing: border-box;
+    width: 23.5%;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+    padding-bottom: 30px;
+    /* border: 2px solid red; */
+}
+
+
+.Content .bgcborder:hover {
+    transform: scale(1.2);
+    transition-delay: 1s;
+    cursor: pointer;
+    z-index: 1;
+    /* background-color: white; */
+}
+.Content .bgcborder .textcontent{
+    /* border: 2px solid red; */
+    width: 80%;
+    box-sizing: border-box;
+    /* color: black; */
+}
+.Content .bgcborder .textcontent h4{
+    font-size: 1.6rem;
+    line-height: 20px;
+    list-style:decimal;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Content .bgcborder .textcontent p{
+    font-size: 160%;
+    /* color: black; */
+
+}
+
+.textwithe{
+    color: white;
+} 
+
+.bgcborder .smalllogo {
+    /* border: 2px solid green; */
+    padding: 10px 0;
+    display: flex;
+}
+
+
+
+
+
+.bgcborder .smalllogo p {
+    margin-top: 8px;
+}
+
+.Content .smalllogo img {
+    margin: 0px 10px 0px 0px;
+    width: 40px;
+    border: 2px solid grey;
+    border-radius: 50px;
+}

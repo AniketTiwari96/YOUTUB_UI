@@ -1,0 +1,225 @@
+/* this is media query  using for mobile phoone */
+@media screen and (max-width : 667px) {
+    body {
+        background-color: white;
+        color: black;
+      }
+    .dark-mode{
+        background-color: black;
+        color: white;
+    }
+    .mainContent {
+        /* border: 3px solid rgb(21, 201, 15); */
+        position: absolute;
+        left: 0px;
+        top: 150px;
+        z-index: -1;
+    }
+
+    .mainhide {
+        left: 0px;
+        padding-left: 0px;
+    }
+
+    .mainContent .botton {
+        margin-top: -86px;
+        padding: 8px 0;
+    }
+
+    .asideBar {
+        display: none !important;
+        margin: 0px;
+    }
+
+    .Content {
+        padding-bottom: 0px;
+        margin-top: -10px;
+        /* background-color:black; */
+    }
+
+    .Content .bgcborder {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.2s ease-in-out;
+        margin-top: 0px;
+        row-gap: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+        /* border: 2px solid red; */
+    }
+
+    .Content .bgcborder:hover {
+        transform: none;
+        transition-delay: 1s;
+        z-index: 0;
+        /* background-color: black; */
+    }
+
+    .Content .bgc {
+        width: 100%;
+        border-radius: 20px;
+        margin: 0px;
+        /* background-color: black; */
+    }
+
+    .Content .textcontent {
+        /* border: 2px solid red; */
+        width: 78%;
+        box-sizing: border-box;
+        margin-top: -5px;
+        margin-bottom: -10px;
+        color: white;
+        /* background-color:black; */
+    }
+
+    .Content .bgcborder .textcontent h4 {
+        font-size: 130%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        line-height: 15px;
+        /* color: rgb(228, 217, 217); */
+    }
+    .Content .bgcborder .textcontent p {
+        font-size: 120%;
+        margin-top: 3px;
+        font-weight: normal;
+        
+    }
+
+    .Content .smalllogo {
+        /* border: 2px solid red; */
+        box-sizing: border-box;
+        margin-top: -20px;
+
+    }
+
+    .Content .smalllogo img {
+        margin-left: 4px;
+        width: 40px;
+        margin-top: -5px;
+        border: 2px solid grey;
+    }
+
+    .fa-solid {
+        display: none;
+    }
+
+    .checkbtn {
+        display: none;
+    }
+
+}
+
+/* this media query for teblate  */
+@media screen and (min-width : 668px) and (max-width : 1050px) {
+    .dark-mode{
+        background-color: black;
+        color: white;
+    }
+    .Content .bgcborder {
+        width: 100%;
+
+    }
+
+    .rigthSideicon #notification img {
+        width: 30px;
+        /* border: 2px solid red; */
+        padding: 0px;
+        margin-left: 10px;
+        margin-right: -10px;
+        margin-top: 2px;
+    }
+
+    .asideBar {
+        /* border: 2px solid red; */
+        width: 230px;
+
+
+    }
+
+    .Content {
+        /* border: 2px solid green; */
+        margin-left: -20px;
+
+    }
+
+    .Content .bgcborder {
+        width: 100%;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .Content .bgcborder:hover {
+        transform: none;
+        transition-delay: 1s;
+    }
+
+    .mainContent .botton {
+        width: 100%;
+        margin-left: -20px;
+    }
+
+    .Content .smalllogo img {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (min-width : 670px) and (max-width : 800px) {
+    .dark-mode{
+        background-color: black;
+        color: white;
+    }
+    .Content .bgcborder {
+        width: 100%;
+        margin-left: 0px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.2s ease-in-out;
+        /* border: 2px solid red; */
+    }
+
+    .Content .bgcborder:hover {
+        transform: none;
+        transition-delay: 1s;
+    }
+
+    .Content .smalllogo img {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (min-width : 800px) and (max-width : 1050px) {
+    .dark-mode{
+        background-color: black;
+        color: white;
+    }
+    .Content .bgcborder {
+        width: 46%;
+        margin-left: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.2s ease-in-out;
+        /* border: 2px solid red; */
+    }
+
+    .Content .bgcborder:hover {
+        transform: none;
+        transition-delay: 1s;
+    }
+
+    .Content .smalllogo img {
+        margin-top: 0px;
+    }
+}
